@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PodajHasło</title>
+
+		<!-- fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/39daee9401.js"
+			crossorigin="anonymous"></script>
+
+		<!-- googlefonts-Montserrat-Dancing Script -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+
+		<!-- mystyle -->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="alert">
+			<div class="inside">
+				<p class="alert-info">Formularz został poprawnie wysłany!</p>
+				<button class="btn close">Zamknij</button>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="top">
+				<h1>Zarejestruj się!</h1>
+			</div>
+			<div class="bottom">
+				<div class="sections">
+					<label for="user-name">Nazwa użytkownika:</label>
+					<input
+						type="text"
+						class="user-name"
+						placeholder="Podaj nazwę użytkownika"
+						minlength="3" />
+					<p class="p-name error-text">Nazwa musi mieć min. 3 znaki!</p>
+				</div>
+
+				<div class="sections">
+					<label for="password">Hasło:</label>
+					<input
+						type="password"
+						class="password"
+						placeholder="Podaj hasło"
+						minlength="8" />
+					<p class="p-pass error-text">Hasło musi mieć min. 8 znaków!</p>
+				</div>
+
+				<div class="sections">
+					<label for="password-repeat">Powtórz hasło:</label>
+					<input
+						type="password"
+						class="password-repeat"
+						placeholder="Powtórz hasło"
+						minlength="8" />
+					<p class="p-repeat error-text">Hasła muszą być takie same!</p>
+				</div>
+
+				<div class="sections">
+					<label for="mail">Adres e-mail:</label>
+					<input type="email" class="mail" placeholder="Podaj adres e-mail" />
+					<p class="p-mail error-text">Wprowadź poprawny adres e-mail!</p>
+				</div>
+				<div class="btns">
+					<button class="btn clear">Wyczyść</button>
+					<button class="btn send">Wyślij</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
