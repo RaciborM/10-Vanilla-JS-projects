@@ -1,1 +1,1 @@
-# 10-Vanilla-JS-projects
+# Password Validation
